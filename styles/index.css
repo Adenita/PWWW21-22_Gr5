@@ -13,9 +13,9 @@ body {
   box-sizing: border-box;
 }
 
-html {
+/*html {
   color: -internal-root-color;
-}
+}*/
 header {
   max-width: 98%;
   background-color: #fff;
@@ -25,7 +25,6 @@ header {
 }
 
 /* Icons */
-/* ICONS */
 .icons {
   width: 250px;
   height: 50px;
@@ -111,9 +110,146 @@ header {
   text-transform: capitalize;
 }
 
+.menuItem--item{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .menuItem--item a:not(:last-child) {
   padding-right: 6px;
   border-right: 1px solid #81b300;
+}
+.MainMenu--MenuItem {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 4px;
+
+}
+.b-search-form {
+  overflow: hidden;
+  float: right;
+  /* padding-right: 2em; */
+}
+
+.MenuFrame {
+  max-width: 98%;
+  padding: 40px 30px;
+  height: 70px;
+  margin: 0 auto;
+  border-top: 30px solid #fff;
+  background-color: #81b300;
+  text-align: center;
+}
+.menu {
+  position: relative;
+  top: -13px;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 75%;
+}
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^="col-"] {
+  float: left;
+}
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.MainMenu {
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding: 1px 12px 1px 1px;
+  float: left;
+  text-align: left;
+}
+.MainMenu:hover{
+  color: #1f1f1f;
+}
+.b-search-form__input {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: 400;
+  float: left;
+  align-items: right;
+  border-right: 1px solid #ddd;
+}
+.b-search-form__input::placeholder {
+  color: #7f7f7f;
+  text-transform: capitalize;
+}
+
+.b-search-form__input_button {
+  width: 80px;
+  padding: 3px 5px;
+  color: #81b300;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer{
+  color: rgb(197, 197, 197);
+  background-color: rgb(100, 98, 98);
+  text-decoration: none;
+  text-align: justify;
+}
+
+.contactDetails{
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.quickLinks{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.fromTheBlog{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.GrabOurNewsletter{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 footer{
