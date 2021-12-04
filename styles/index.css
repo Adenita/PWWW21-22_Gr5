@@ -252,6 +252,44 @@ footer{
   margin-bottom: 10px;
 }
 
+footer{
+  color: rgb(197, 197, 197);
+  background-color: rgb(100, 98, 98);
+  text-align: justify;
+}
+
+.footer1{
+  margin-left: 70px;
+  margin-top: 40px; 
+}
+
+.footer2{
+  text-align: left;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+a:link {
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+
+.readMore{
+  color: rgb(4, 143, 4);
+}
+
+.divFooter{
+  color: rgb(158, 157, 157);
+  background-color: #333333;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  display:flow-root;
+}
+
 
 /* Container */
 
