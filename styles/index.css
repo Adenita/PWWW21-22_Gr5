@@ -290,6 +290,44 @@ a:link {
   display:flow-root;
 }
 
+footer{
+  color: rgb(197, 197, 197);
+  background-color: rgb(100, 98, 98);
+  text-decoration: none;
+  text-align: justify;
+}
+
+.contactDetails{
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.quickLinks{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.fromTheBlog{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.GrabOurNewsletter{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
 
 /* Container */
 
