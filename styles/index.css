@@ -213,6 +213,39 @@ header {
   font-weight: 700;
   text-transform: uppercase;
 }
+/*stilizimi i pjeses main te body*/
+main{
+  background-color: white;
+}
+
+#cs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#slider {
+    text-align: center;
+    padding: 65px 0;
+    margin: 0 auto;
+    height: 520px;
+    background: #f2f2f2;
+    z-index: -9999;
+  }
+.columnContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 300px 500px;
+    grid-gap: 40px;
+    background-color: white;
+}
+.column {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
 
 footer{
   color: rgb(197, 197, 197);
