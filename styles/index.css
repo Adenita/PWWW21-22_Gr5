@@ -216,6 +216,8 @@ header {
 /*stilizimi i pjeses main te body*/
 main{
   background-color: white;
+  width: 98%;
+  margin-left: 15px
 }
 
 #cs {
@@ -223,6 +225,8 @@ main{
     justify-content: center;
     align-items: center;
     background-color: white;
+    width: 98%;
+
 }
 
 #slider {
@@ -232,9 +236,10 @@ main{
     height: 520px;
     background: #f2f2f2;
     z-index: -9999;
+    width: 98%;
   }
 .columnContainer {
-    width: 95%;
+    width: 98%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-rows: 300px 500px;
