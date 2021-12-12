@@ -34,7 +34,8 @@ header {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  right: 30px;
+  right: 10px;
+  padding-right: 0.7em;
 }
 
 .icon {
@@ -71,6 +72,7 @@ header {
 
 .title {
   padding-top: 0.5em;
+  padding-left: 0.6em;
   margin: 0;
 }
 
@@ -95,7 +97,7 @@ header {
 }
 
 .menuItem--item:last-child {
-  margin-right: 2em;
+  margin-right: 0.7em;
   margin-top: -1em;
   font-size: 12px;
   float: right;
@@ -119,7 +121,7 @@ header {
 }
 /* Styling the navigation bar */
 .nav-bar{
-  padding-right: 10px;
+  padding-right: 0.6em;
   display: flex;
   justify-content: flex-left;
   background-color:  #81b300;
