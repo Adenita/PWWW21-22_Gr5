@@ -171,11 +171,12 @@
     </main>
     <footer>
       <br>
+
       <table class="footer1">
-        <col width="350" relative_length>
-        <col width="350" relative_length> 
-        <col width="350" relative_length> 
-        <col width="350" relative_length> 
+        <col width="22%" relative_length>
+        <col width="22%" relative_length> 
+        <col width="22%" relative_length> 
+        <col width="22%" relative_length> 
         <thead>
           <tr><th>CONTACT DETAILS</th><th>QUICK LINKS</th><th>FROM THE BLOG</th><th>GRAB OUR NEWSLETTER</th></tr>
         </thead>
@@ -188,8 +189,8 @@
           </td>
 
           <td class="footer2">
-            <p><a href="#">Link Text Here</a><br>
-            ______________________________</p>
+            <p><a href="#">Link Text Here</a><hr>
+            <!-- ______________________________</p> -->
             <p><a href="#">Link Text Here</a><br>
             ______________________________</p>
             <p><a href="#">Link Text Here</a><br>
@@ -202,62 +203,34 @@
             <p>Blog Post Title</p>
             <p>Posted By Admin</p>
             <p>BlogBlogBlogBlogBlogBlogBlogBlogBlog</p>
-            <p class="readMore"><a href="#">Read More >></a></p>
+            <table>
+              <col width = "150">
+              <tr><td></td>
+                <td><p class="readMore"><a href="#">Read More >></a></p></td>
+              </tr>
+            </table>
           </td>
 
           <td class="footer2">
             <form method="post" action="https://rogova.info/test/feedback.php">
               <input type="text" name="Name" placeholder="Name"><br>
               <br>
-              <input type="text" name="Email" placeholder="Email">
+              <input type="text" name="Email" placeholder="Email"><br>
+              <br>
+              <input class="submitButton" type="submit" name="submit" value="SUBMIT">
             </form>
           </td>
         </tr>
       </table>
 
       <div class="divFooter">
-        <div style="float: inline-start;">
          <p>
             Copyright &copy; 2013 - All Rights Reserved - Domain Name
          </p>
-        </div>
-        <div style="float: inline-end;">
           <p>Template by OS Templates</p>
-        </div>
+        
       </div>
-        <div class="contactDetails">
-          <h5>CONTACT DETAILS</h5>
-          <p>Kontaktkontaktkontaktkontakt kontaktkontaktkontaktkontaktkontakt kontaktkontaktkontaktkontakt</p><br>
-          <p>Tel: 049 111 222</p>
-          <p>Fax:</p>
-          <p>Email: contact@mydomain.com</p>
-        </div>
-        <div class="quickLinks">
-          <h5>QUICK LINKS</h5>
-          <p><a href="#">Link Text Here</a></p>
-          <p>______________________________</p>
-          <p><a href="#">Link Text Here</a></p>
-          <p>______________________________</p>
-          <p><a href="#">Link Text Here</a></p>
-          <p>______________________________</p>
-          <p><a href="#">Link Text Here</a></p>
-          <p>______________________________</p>
-        </div>
-        <div class="fromTheBlog">
-          <h5>FROM THE BLOG</h5>
-          <p>Blog Post Title</p>
-          <p>Posted By Admin</p>
-          <p>BlogBlogBlogBlogBlogBlogBlogBlogBlog</p>
-          <p><a href="#">Read More >></a></p>
-        </div>
-        <div class="GrabOurNewsletter">
-          <h4>GRAB OUR NEWSLETTER</h4>
-          <form method="post" action="https://rogova.info/test/feedback.php">
-            <input type="text" name="Name"><br>
-            <br>
-            <input type="text" name="Email">
-          </form>
-        </div>
+  
     </footer>
 </body>
 </html>
