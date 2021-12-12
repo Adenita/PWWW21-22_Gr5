@@ -3,7 +3,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #1f1f1f;
+  background-color: white;
   font-family: Georgia, serif;
   display: block;
 }
@@ -189,6 +189,131 @@ button:hover{
   text-transform: capitalize;
 }
 
+.b-search-form__input_button {
+  width: 80px;
+  padding: 3px 5px;
+  color: #81b300;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*stilizimi i pjeses main te body*/
+main {
+    background-color: white;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+/*stilizimi i section te pjeses se kolonave*/
+#cs {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/*stilizimi i div-it qe permban kolonat e para*/
+.columnContainer {
+     display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*stilizimi i kolonave te para*/
+.column {
+    height: 400px;
+    min-width: 200px;
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*stilizimi i div-it qe permban kolonat e dyta*/
+.columnContainer1 {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*stilizimi i kolonave te dyta*/
+.column1 {
+  padding-top: 50px;
+  height: 500px;
+  position: relative;
+  text-align: center;
+}
+
+/*Stlizimi i seksionit qe permban slider*/
+#slider {
+    text-align: center;
+    padding: 65px 0;
+    height: 520px;
+    background: #f2f2f2;
+    z-index: -9999;
+    
+}
+
+.slideContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/*Stilizimi i imazheve brenda slider*/
+.imageSlider {
+  width: 850px;
+  height: 360px;
+  border: 10px solid white
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #333 center no-repeat;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Stilizimi i pikave posht imazheve*/
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: #333;
+  border-width: 1px;
+}
+
 footer{
   color: rgb(197, 197, 197);
   background-color: rgb(100, 98, 98);
@@ -225,6 +350,44 @@ a:link {
   padding-bottom: 10px;
   padding-right: 25px;
   display:flow-root;
+}
+
+footer{
+  color: rgb(197, 197, 197);
+  background-color: rgb(100, 98, 98);
+  text-decoration: none;
+  text-align: justify;
+}
+
+.contactDetails{
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.quickLinks{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.fromTheBlog{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.GrabOurNewsletter{
+  float: left;
+  width: 200;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 
