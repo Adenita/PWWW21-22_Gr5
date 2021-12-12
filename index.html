@@ -86,13 +86,24 @@
     </header>
     <main>
       <section id = "slider">
-        <img src="/images/FantasySunset.jpg" style="width:800px; height:360px;" />
+        <div class = "slideContainer">
+          <div class = "myslide fade">
+            <img src="images/FantasySunset.jpg" class = "imageSlider"/>
+          </div>
+        </div>
         <br>
-    </section>
-    <section id = "cs">
+        <div style="text-align:center">
+          <span class="prev" onclick="plusSlides(-1)"><img src="images/left-arrow.png" style = "width: 10px; height: 10px;" alt="" /></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="next" onclick="plusSlides(1)"> <img src="images/right-arrow.png" style = "width: 10px; height: 10px;" alt="" /></span>
+        </div>
+      </section>
+
+      <section id = "cs">
         <div class = "columnContainer">
             <div class = "column">
-                <img src="/icon/icon-group.png" width="70x"; height="64px"; />
+                <img src="images/icon-group.png" width="70x"; height="64px"; />
                 <h3> Vivamuslibero Augue </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -101,7 +112,7 @@
                 </p>
             </div>
             <div class = "column">
-                <img src="/icon/icon-leaf.png" width="70x"; height="64px";/>
+                <img src="images/icon-globe.png" width="70x"; height="64px";/>
                 <h3> Vivamuslibero Augue </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -110,7 +121,7 @@
                 </p>
             </div>
             <div class = "column">
-                <img src="/icon/icon-cogs.png" width="70x"; height="64px"; />
+                <img src="images/icon-cogs.png" width="70x"; height="64px"; />
                 <h3> Vivamuslibero Augue </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -119,7 +130,7 @@
                 </p>
             </div>
             <div class = "column">
-                <img src="/icon/icon-rss.png" width="70x"; height="64px";/>
+                <img src="images/icon-leaf.png" width="70x"; height="64px";/>
                 <h3> Vivamuslibero Augue </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -127,7 +138,10 @@
                     laudantium officiis molestiae.
                 </p>
             </div>
-            <div class = "column">
+          </div>
+          <hr>
+          <div class = "columnContainer1">
+            <div class = "column1">
                 <img src="images/200.png" width="200px"; height="130px";/>
                 <h3> Vivamuslibero Augue </h3>
                 <p>
@@ -136,7 +150,7 @@
                     laudantium officiis molestiae.
                 </p>
             </div>
-            <div class = "column">
+            <div class = "column1">
                 <img src="images/200.png" width="200px"; height="130px";/>
                 <h3> Vivamuslibero Augue </h3>
                 <p>
@@ -145,7 +159,7 @@
                     laudantium officiis molestiae.
                 </p>
             </div>
-            <div class = "column">
+            <div class = "column1">
                 <img src="images/200.png" width="200px"; height="130px";/>
                 <h3> Vivamuslibero Augue </h3>
                 <p>
@@ -154,17 +168,16 @@
                     laudantium officiis molestiae.
                 </p>
             </div>
-            <div class = "column">
-                <img src="images/200.png" width="200px"; height="130px";/>
-                <h3> Vivamuslibero Augue </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-            </div>
-        </div>
-    </section>
+            <div class = "column1">
+              <img src="images/200.png" width="200px"; height="130px";/>
+              <h3> Vivamuslibero Augue </h3>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  perferendis vel et quis debitis delectus modi temporibus
+                  laudantium officiis molestiae.
+              </p>
+          </div>
+        </section>
     </main>
     <footer>
       <br>
