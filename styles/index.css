@@ -189,6 +189,90 @@ button:hover{
   text-transform: capitalize;
 }
 
+.b-search-form__input_button {
+  width: 80px;
+  padding: 3px 5px;
+  color: #81b300;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*stilizimi i pjeses main te body*/
+main{
+  background-color: white;
+  width: 98%;
+  margin-left: 15px
+}
+
+#cs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 98%;
+
+}
+
+#slider {
+    text-align: center;
+    padding: 65px 0;
+    margin: 0 auto;
+    height: 520px;
+    background: #f2f2f2;
+    z-index: -9999;
+    width: 98%;
+  }
+.columnContainer {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 300px 500px;
+    grid-gap: 40px;
+    background-color: white;
+}
+.column {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer{
+  color: rgb(197, 197, 197);
+  background-color: rgb(100, 98, 98);
+  text-align: justify;
+}
+
+.footer1{
+  margin-left: 70px;
+  margin-top: 40px; 
+}
+
+.footer2{
+  text-align: left;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+a:link {
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+
+.readMore{
+  color: rgb(4, 143, 4);
+}
+
+.divFooter{
+  color: rgb(158, 157, 157);
+  background-color: #333333;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  display:flow-root;
+}
+
 footer{
   color: rgb(197, 197, 197);
   background-color: rgb(100, 98, 98);
