@@ -318,16 +318,29 @@ footer{
   color: rgb(197, 197, 197);
   background-color: rgb(100, 98, 98);
   text-align: justify;
+  align-items: center;
+  background-size: contain;
+  position: absolute;
+  font-size: 17px;
 }
 
 .footer1{
-  margin-left: 70px;
+  margin-left: 60px;
   margin-top: 40px; 
+}
+
+.footer1 th{
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: left;
+  color: rgb(158, 156, 156);
+  padding-left: 16px;
 }
 
 .footer2{
   text-align: left;
   vertical-align: top;
+  padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -338,56 +351,62 @@ a:link {
   text-decoration: none;
 }
 
-.readMore{
-  color: rgb(4, 143, 4);
+a:visited {
+  color: rgb(197, 197, 197); 
+}
+
+a:hover{
+  text-shadow: -1px 1px 13px white;
+  transition: 150ms linear;
+}
+
+.readMore a{
+  color: rgb(33, 211, 33);
+}
+
+.grabournewsletter {
+  background-color: #313030;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding-left: 5px;
+  color: white;
+  max-lines: 1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.grabournewsletter::placeholder{
+  color:white;
+  font-size: 16px;
+}
+
+.submitButton {
+  color:rgb(33, 211, 33);
+  background-color: #313030;
+  border-radius: 5px;
+  padding: 3px 9px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  zoom: 105%;
+  box-shadow: 1px 1px 13px rgb(27, 27, 27);
+  transition: 100ms linear;
 }
 
 .divFooter{
-  color: rgb(158, 157, 157);
+  color: rgb(145, 144, 144);
   background-color: #333333;
   padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 25px;
-  display:flow-root;
-}
-
-footer{
-  color: rgb(197, 197, 197);
-  background-color: rgb(100, 98, 98);
-  text-decoration: none;
-  text-align: justify;
-}
-
-.contactDetails{
-  float: left;
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.quickLinks{
-  float: left;
-  width: 200;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-
-.fromTheBlog{
-  float: left;
-  width: 200;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-
-.GrabOurNewsletter{
-  float: left;
-  width: 200;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 10px;
+  display:flex;
+  justify-content: space-between;
 }
 
 
