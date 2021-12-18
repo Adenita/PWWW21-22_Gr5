@@ -48,26 +48,44 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+.icon--linkedin:hover{
+  background-image: url(../assets/icons/linkedin-hover.png);
+ 
+}
 .icon--twitter {
   background-image: url(../assets/icons/icon-twitter.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+.icon--twitter:hover {
+  background-image: url(../assets/icons/twitter-hover.png);
+
 }
 .icon--pinterest {
   background-image: url(../assets/icons/icon-pinterest.png);
   background-repeat: no-repeat;
   background-position: center;
 }
+.icon--pinterest:hover {
+  background-image: url(../assets/icons/pinterest-hover.png);
+}
 .icon--google-plus {
   background-image: url(../assets/icons/icon-google-plus.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+.icon--google-plus:hover {
+  background-image: url(../assets/icons/google-plus-hover.png);
 }
 .icon--rss {
   background-image: url(../assets/icons/icon-rss.png);
   background-repeat: no-repeat;
   background-position: center;
 }
+.icon--rss:hover {
+  background-image: url(../assets/icons/rss-hover.png);
+}
+
 
 .title {
   padding-top: 0.5em;
