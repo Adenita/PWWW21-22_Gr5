@@ -203,6 +203,7 @@ main {
     display: block;
     justify-content: center;
     align-items: center;
+    color: grey;
 }
 /*stilizimi i section te pjeses se kolonave*/
 #cs {
@@ -245,7 +246,29 @@ main {
   padding-top: 50px;
   height: 500px;
   position: relative;
-  text-align: center;
+  text-align: left;
+}
+
+.column1 img {
+  width: 95%;
+  height: 180px;
+  border-image: url(200.png) 30 round;
+}
+
+.column h3 {
+  color: #81b300;
+
+}
+
+.column1 h4 {
+  color: black;
+  text-align: left;
+}
+
+.column1 h5 {
+  color: #81b300;
+  text-align: right;
+  padding-right: 10px;
 }
 
 /*Stlizimi i seksionit qe permban slider*/
@@ -268,7 +291,7 @@ main {
 .imageSlider {
   width: 850px;
   height: 360px;
-  border: 10px solid white
+  border: 10px solid white;
 }
 
 
