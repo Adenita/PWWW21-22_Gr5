@@ -3,8 +3,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #1f1f1f;
-
+  background-color: white;
   font-family: Georgia, serif;
   display: block;
 }
@@ -13,15 +12,14 @@ body {
   box-sizing: border-box;
 }
 
-/*html {
-  color: -internal-root-color;
-}*/
 header {
   max-width: 98%;
   background-color: #fff;
   border-top: 5px solid #81b300;
   position: relative;
   margin: 0 auto;
+  box-sizing: border-box;
+  
 }
 
 /* Icons */
@@ -36,7 +34,8 @@ header {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  right: 30px;
+  right: 10px;
+  padding-right: 0.7em;
 }
 
 .icon {
@@ -73,6 +72,7 @@ header {
 
 .title {
   padding-top: 0.5em;
+  padding-left: 0.6em;
   margin: 0;
 }
 
@@ -97,7 +97,7 @@ header {
 }
 
 .menuItem--item:last-child {
-  margin-right: 2em;
+  margin-right: 0.7em;
   margin-top: -1em;
   font-size: 12px;
   float: right;
@@ -119,89 +119,72 @@ header {
   padding-right: 6px;
   border-right: 1px solid #81b300;
 }
-.MainMenu--MenuItem {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 4px;
-
-}
-.b-search-form {
-  overflow: hidden;
-  float: right;
-  /* padding-right: 2em; */
+/* Styling the navigation bar */
+.nav-bar{
+  padding-right: 0.6em;
+  display: flex;
+  justify-content: flex-left;
+  background-color:  #81b300;
+  align-items: center;
 }
 
-.MenuFrame {
-  max-width: 98%;
-  padding: 40px 30px;
-  height: 70px;
-  margin: 0 auto;
-  border-top: 30px solid #fff;
-  background-color: #81b300;
-  text-align: center;
-}
-.menu {
-  position: relative;
-  top: -13px;
-}
-.container {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 75%;
-}
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-}
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row [class^="col-"] {
-  float: left;
-}
-.row [class^="col-"]:not(:last-child) {
-  margin-right: 6rem;
-}
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
-}
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
-}
-.MainMenu {
+.nav_links{
+  cursor: pointer;
   list-style: none;
-  text-decoration: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  padding: 1px 12px 1px 1px;
-  float: left;
-  text-align: left;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  
 }
-.MainMenu:hover{
+.nav_links li{
+  display: inline-block;
+  
+}
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+.nav_links li a:hover{
   color: #1f1f1f;
 }
-.b-search-form__input {
+button{
+  width: 80px;
   height: 30px;
+  background-color: rgba(255, 255, 255, 1) ;
+  color: #81b300;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: none;
+  border-left: 2px solid #ddd; 
+}
+button:hover{
+  background-color: rgba(53, 28, 28, 0.3);
+}
+.div-search{
+  margin-left: auto; 
+  display: inline-block;
+  border: none;
+  background-color:#fff;
+  align-self:right;
+}
+.search{
+  height: 20px;
   width: 200px;
   border: none;
-  border-bottom: 1px solid #ddd;
   background-color: #fff;
   color: #7f7f7f;
   font-size: 12px;
   font-weight: 400;
-  float: left;
   align-items: right;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #fff;
+  padding-left: 10px;
 }
-.b-search-form__input::placeholder {
+.search::placeholder {
   color: #7f7f7f;
   text-transform: capitalize;
 }
@@ -214,58 +197,173 @@ header {
   text-transform: uppercase;
 }
 /*stilizimi i pjeses main te body*/
-main{
-  background-color: white;
-  width: 98%;
-  margin-left: 15px
+main {
+    background-color: white;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: grey;
 }
-
+/*stilizimi i section te pjeses se kolonave*/
 #cs {
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 98%;
+}
+
+/*stilizimi i div-it qe permban kolonat e para*/
+.columnContainer {
+     display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*stilizimi i kolonave te para*/
+.column {
+    height: 400px;
+    min-width: 200px;
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*stilizimi i div-it qe permban kolonat e dyta*/
+.columnContainer1 {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*stilizimi i kolonave te dyta*/
+.column1 {
+  padding-top: 50px;
+  height: 500px;
+  position: relative;
+  text-align: left;
+}
+
+.column1 img {
+  width: 95%;
+  height: 180px;
+  border-image: url(200.png) 30 round;
+}
+
+.column h3 {
+  color: #81b300;
 
 }
 
+.column1 h4 {
+  color: black;
+  text-align: left;
+}
+
+.column1 h5 {
+  color: #81b300;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/*Stlizimi i seksionit qe permban slider*/
 #slider {
     text-align: center;
     padding: 65px 0;
-    margin: 0 auto;
     height: 520px;
     background: #f2f2f2;
     z-index: -9999;
-    width: 98%;
-  }
-.columnContainer {
-    width: 98%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-template-rows: 300px 500px;
-    grid-gap: 40px;
-    background-color: white;
+    
 }
-.column {
+
+.slideContainer {
+    max-width: 1000px;
     position: relative;
-    text-align: center;
-    margin-top: 30px;
+    margin: auto;
+}
+
+/*Stilizimi i imazheve brenda slider*/
+.imageSlider {
+  width: 850px;
+  height: 360px;
+  border: 10px solid white;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #333 center no-repeat;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Stilizimi i pikave posht imazheve*/
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: #333;
+  border-width: 1px;
 }
 
 footer{
   color: rgb(197, 197, 197);
   background-color: rgb(100, 98, 98);
   text-align: justify;
+  align-items: center;
+  background-size: contain;
+  position: absolute;
+  font-size: 17px;
 }
 
 .footer1{
-  margin-left: 70px;
+  margin-left: 60px;
   margin-top: 40px; 
+}
+
+.footer1 th{
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: left;
+  color: rgb(158, 156, 156);
+  padding-left: 16px;
 }
 
 .footer2{
   text-align: left;
   vertical-align: top;
+  padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -276,56 +374,62 @@ a:link {
   text-decoration: none;
 }
 
-.readMore{
-  color: rgb(4, 143, 4);
+a:visited {
+  color: rgb(197, 197, 197); 
+}
+
+a:hover{
+  text-shadow: -1px 1px 13px white;
+  transition: 150ms linear;
+}
+
+.readMore a{
+  color: rgb(33, 211, 33);
+}
+
+.grabournewsletter {
+  background-color: #313030;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding-left: 5px;
+  color: white;
+  max-lines: 1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.grabournewsletter::placeholder{
+  color:white;
+  font-size: 16px;
+}
+
+.submitButton {
+  color:rgb(33, 211, 33);
+  background-color: #313030;
+  border-radius: 5px;
+  padding: 3px 9px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  zoom: 105%;
+  box-shadow: 1px 1px 13px rgb(27, 27, 27);
+  transition: 100ms linear;
 }
 
 .divFooter{
-  color: rgb(158, 157, 157);
+  color: rgb(145, 144, 144);
   background-color: #333333;
   padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 25px;
-  display:flow-root;
-}
-
-footer{
-  color: rgb(197, 197, 197);
-  background-color: rgb(100, 98, 98);
-  text-decoration: none;
-  text-align: justify;
-}
-
-.contactDetails{
-  float: left;
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.quickLinks{
-  float: left;
-  width: 200;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-
-.fromTheBlog{
-  float: left;
-  width: 200;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-
-.GrabOurNewsletter{
-  float: left;
-  width: 200;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 10px;
+  display:flex;
+  justify-content: space-between;
 }
 
 
