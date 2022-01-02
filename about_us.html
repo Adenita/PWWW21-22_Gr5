@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
     <title>PWWW21-22_Gr5</title>
+    <link rel="stylesheet" href="./styles/header_footer.css">
+    <link rel="stylesheet" href="./styles/about_us.css">
+    <style>
+      .fb {
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+
+      .ig {
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border-radius: 70%; */
+      }
+
+      .git {
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+
+      .socialinks {
+          margin: 18px;
+      }
+
+      .socialinks a {
+          display: inline-block;
+          height: 20px;
+          width: 23px;
+          transition: 0.4s;
+      }
+
+      .socialinks a i {
+          color: #444;
+      }
+
+      .socialinks a:hover {
+          transform: scale(1.5);
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -75,103 +112,74 @@
       <!-- Navigation Bar-->
     </header>
     <main>
-      <section id = "slider">
-        <div class = "slideContainer">
-          <div class = "myslide fade">
-            <img src="images/FantasySunset.jpg" class = "imageSlider"/>
-          </div>
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="prev" onclick="plusSlides(-1)"><img src="images/left-arrow.png" style = "width: 10px; height: 10px;" alt="" /></span>
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="next" onclick="plusSlides(1)"> <img src="images/right-arrow.png" style = "width: 10px; height: 10px;" alt="" /></span>
-        </div>
-      </section>
 
-      <section id = "cs">
-        <div class = "columnContainer">
-            <div class = "column">
-                <img src="images/icon-group.png" width="70x"; height="64px"; />
-                <h3> Vivamuslibero Augue </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-            </div>
-            <div class = "column">
-                <img src="images/icon-globe.png" width="70x"; height="64px";/>
-                <h3> Vivamuslibero Augue </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-            </div>
-            <div class = "column">
-                <img src="images/icon-cogs.png" width="70x"; height="64px"; />
-                <h3> Vivamuslibero Augue </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-            </div>
-            <div class = "column">
-                <img src="images/icon-leaf.png" width="70x"; height="64px";/>
-                <h3> Vivamuslibero Augue </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-            </div>
+      <div class = "con">
+        <div class="about-s">
+          <div class="abcon">
+              <h1><i>About us</i></h1>
+              <hr>
+              <h2> <em>Who are we?</em>  </h2>
+              <p class = "text"> <i> 
+              We are a small new company of <b>hard workers and overachievers</b>  who will make sure that you will feel part of the experience just by visiting our website<br>
+              <span><strong>We want to be </strong></span> the only kosova travel guide you’ll ever need. 
+              </i> </p>
+              <h2> <em>What is our purpouse?</em></h2>
+              <p class = "text"> <i> We want to share with the world the beautiful country that is Kosovo. 
+                From cultural monuments, mosques and churches to the beautiful views, we will include all that we can so that even an outsider can appreciate
+                our dear Kosova. </i>  </p> 
           </div>
-          <hr>
-          <div class = "columnContainer1">
-            <div class = "column1">
-                <img src="images/200.png"/>
-                <h4> Project Title </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-                <h5>View Details</h5>
+         
+      </div>
+      </div>
+
+        <div class="container">
+          <div class = "team">
+            <div class = "our">
+               <h1> Our Team</h1>
             </div>
-            <div class = "column1">
-                <img src="images/200.png"/>
-                <h4> Project Title </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-                <h5>View Details</h5>
+            <div class="subCon">
+              <div class="ourteam">
+                <img src="images/icon-globe.png"  alt="globe">
+                <p class = "name"> Adenita Luta</p>
+                <p class="design">Designer</p>
+                <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus sint veniam quam consequatur a, aliquid ipsum maiores quisquam at. Debitis fuga enim alias culpa porro animi veritatis sunt nam?</p>
+                <div class="socialinks">
+                  <a href=""><i class = "fb"></i><img src="images/fb-icon.png" alt="facebook" style="width: 18px; height: 18px;"></a>
+                  <a href=""><i class = "ig"></i><img src="images/ig-icon.png" alt="instagram" style="width: 18px; height: 18px;"></a>
+                  <a href=""><i class = "ig"></i><img src="images/git-logo.png" alt="github" style="width: 18px; height: 18px;"></a>
+                </div>
+              </div>
+    
+              <div class="ourteam">
+                <img src="images/icon-globe.png" alt="globe">
+                <p class = "name">Arlinda Sylaj</p>
+                <p class="design">Designer</p>
+                <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus sint veniam quam consequatur a, aliquid ipsum maiores quisquam at. Debitis fuga enim alias culpa porro animi veritatis sunt nam?</p>
+                <div class="socialinks">
+                  <a href=""><i class = "fb"></i><img src="images/fb-icon.png" alt="facebook" style="width: 18px; height: 18px;"></a>
+                  <a href=""><i class = "ig"></i><img src="images/ig-icon.png" alt="instagram" style="width: 18px; height: 18px;"></a>
+                  <a href=""><i class = "ig"></i><img src="images/git-logo.png" alt="github" style="width: 18px; height: 18px;"></a>
+                </div>
+              </div>
+    
+              <div class="ourteam">
+                <img src="images/icon-globe.png" alt="globe">
+                <p class = "name">Liri Rexha</p>
+                <p class="design">Designer</p>
+                <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus sint veniam quam consequatur a, aliquid ipsum maiores quisquam at. Debitis fuga enim alias culpa porro animi veritatis sunt nam?</p>
+                <div class="socialinks">
+                  <a href=""><i class = "fb"></i><img src="images/fb-icon.png" alt="facebook" style="width: 18px; height: 18px;"></a>
+                  <a href=""><i class = "ig"></i><img src="images/ig-icon.png" alt="instagram" style="width: 18px; height: 18px;"></a>
+                  <a href=""><i class = "ig"></i><img src="images/git-logo.png" alt="github" style="width: 18px; height: 18px;"></a>
+                </div>
+              </div>
             </div>
-            <div class = "column1">
-                <img src="images/200.png"/>
-                <h4> Project Title </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                    perferendis vel et quis debitis delectus modi temporibus
-                    laudantium officiis molestiae.
-                </p>
-                <h5>View Details</h5>
-            </div>
-            <div class = "column1">
-              <img src="images/200.png"/>
-              <h4> Project Title </h4>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  perferendis vel et quis debitis delectus modi temporibus
-                  laudantium officiis molestiae.
-              </p>
-              <h5>View Details</h5>
+            
+  
           </div>
-        </section>
+        </div>
+        
+
     </main>
     <footer>
       <br>

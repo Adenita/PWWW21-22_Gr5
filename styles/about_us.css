@@ -1,0 +1,147 @@
+
+main {
+    width: 98%;
+    padding-left: 1%;
+    
+}
+
+.con {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.about-s {
+    background: url(../images/lightTree1.jpg) no-repeat left;
+    background-size: 75%;
+    overflow: hidden;
+    padding: 150px 20px;
+}
+
+.abcon {
+    width: 55%;
+    float: right;
+    background-color: white;
+    padding: 35px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    opacity: 0.8;
+
+
+}
+
+.abcon:hover {
+    opacity: 1.0;
+}
+
+.abcon h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.abcon h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 16px;
+    color: #81b300;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+
+.team {
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.our {
+    padding-top: 50px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+}
+
+.container {
+   text-align: center;
+}
+
+.subCon {
+    max-width: 1150px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ourteam {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.ourteam img {
+    width: 150px;
+    height: 150px;
+}
+
+.name  {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.design {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.ourteam:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+    .about-s {
+        background-size: 100%;
+        padding: 120px 30px;
+    }
+    .abcon {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-s {
+        padding: 0;
+    }
+    .abcon {
+        padding: 2px;
+        opacity: 1.0;
+    }
+
+    .ourteam {
+       max-width: 100%;
+    }
+}
+
