@@ -7,66 +7,92 @@
      <title>Document</title>
  </head>
  <body>
+   <h1>Kerkesat e mbetura </h1>
+  <hr>
+  <form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+  </datalist>
+  <input type="submit">
+  </form>
+     <hr>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">
+    =<output name="x" for="a b"></output>
+    </form>
+<hr>
+    <p>Please type a pozitive integer smaller than 10 </p>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p1" style="border: 1px dotted black; width: 150px; height: 50px;"></p>
+<hr>
+   <!-- Vizatimi i nje ylli me ane svg -->
+   <div>
+     <svg width="200" height="250" >
+         <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+             stroke="green" fill="transparent" stroke-width="5"/>
+     </svg>
+   </div>
+<hr>
+    <canvas  width="200" height="100" style="border: 1px solid #c3c3c3; background-color:red;"></canvas>
+<hr>
+<p>number 10.33 into the power 2.4</p>
+<p id = "p2"></p>
+<hr>
+<p>Turning number 10 into base 2 number</p>
+<p id = "p3"></p>
+<hr>
+<p id = "p4"></p>
 
-    <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
-            stroke="green" fill="transparent" stroke-width="5"/>
-      </svg>
-
-      <h1>The datalist element</h1>
-
-        <form action="/action_page.php" method="get">
-        <label for="browser">Choose your browser from the list:</label>
-        <input list="browsers" name="browser" id="browser">
-        <datalist id="browsers">
-            <option value="Edge">
-            <option value="Firefox">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
-        </datalist>
-        <input type="submit">
-        </form>
-
-        <p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
-
-        <h1>The output element</h1>
-
-        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <input type="range" id="a" value="50">
-        +<input type="number" id="b" value="25">
-        =<output name="x" for="a b"></output>
-        </form>
-
-            <p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
-
-
-        <p>Count numbers: <output id="result"></output></p>
-        <button onclick="startWorker()">Start Worker</button> 
-        <button onclick="stopWorker()">Stop Worker</button>
-
-        <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
-
+    
 <script>
-var w;
 
-function startWorker() {
-  if(typeof(Worker) !== "undefined") {
-    if(typeof(w) == "undefined") {
-      w = new Worker("demo_workers.js");
+    function myFunction() {
+      const message = document.getElementById("p1");
+      message.innerHTML = "";
+      let x = document.getElementById("demo").value;
+      try { 
+        if(x == "")  throw "please type ";
+        if(isNaN(x)) throw "please type an integer ";
+        if(x > 10)   throw "please type an integer smaller than 10";
+        if(x < 0) throw "please type a positive integer"
+        else throw "okay"
+      }
+      catch(err) {
+        message.innerHTML = err;
+      }
     }
-    w.onmessage = function(event) {
-      document.getElementById("result").innerHTML = event.data;
-    };
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
-  }
-}
 
-function stopWorker() { 
-  w.terminate();
-  w = undefined;
-}
+    var i = 0;
+    function timedCount() {
+      i = i + 1;
+      postMessage(i);
+      setTimeout("timedCount()", 500);
+    }
+
+    
+    let num = 10.33;
+    let exp = 2.4;
+    let n = num.toExponential(exp);
+    document.getElementById("p2").innerHTML = n + " = "+ num + "^" + exp ;
+
+    let baseTenInt = 10;
+    let na = baseTenInt.toString(2)
+    document.getElementById("p3").innerHTML = na; 
+
+    let max = Math.max(10, 20, 30, 4);
+    document.getElementById("p4").innerHTML = max; 
+
+
+
+
 </script>
 
 </body>
