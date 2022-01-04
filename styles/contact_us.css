@@ -35,7 +35,7 @@ body {
 
 
 header {
-  max-width: 98%;
+  /* max-width: 98%; */
   background-color: var(--background_color);
   color: var(--text_color);
   border-top: 5px solid var(--template_color);
@@ -311,7 +311,7 @@ form .row .textarea {
 .inputs input:focus ~ label,
 .textarea textarea:focus ~ label,
 .inputs input:valid ~ label{
-  transform: translateY(-25px);
+  transform: translateY(-20px);
   color: var(--second_gradient);
   font-size: 14px;
 }
@@ -339,7 +339,7 @@ textarea:focus, input:focus{
 .inputs .underline {
   position: absolute;
   color:var(--text_color);
-  bottom: 0;
+  bottom: -6px;
   height: 2px;
   width: 100%;
 }

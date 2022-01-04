@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/cultural.css">
-    <link rel="stylesheet" href="./styles/header_footer.css">
 
-    
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +52,8 @@
         <li class="menuItem menuItem--item">
           <a id="signup" href="login_signup.html">Sign Up</a>
           <a id="login" href="login_signup.html">Login</a>
+          <a href="#" id = "nightmode">Night Mode</a>
+
         </li>
       </ul>
     </div>
@@ -64,9 +64,9 @@
           <ul class="nav_links">
               <li><a href="index.html" >HomePage</a></li>
               <li><a href="cultural.html" style="color: #1f1f1f;" >Culture</a></li>
-              <li><a href="#">Destination</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a ></li>
+              <li><a href="destinations.html">Destination</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="contact_us.html">Contact Us</a ></li>
           </ul>
         </nav>  
           <div class="div-search">
@@ -121,7 +121,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\SinanPasha.jpg" alt="Xhamia Sinan Pashes" >
+                    <img src="../PWWW21-22_Gr5/assets/cards/SinanPasha.jpg" alt="Xhamia Sinan Pashes" >
                     <div class="flip-card-front-text">
                         <h1>Xhamia e Sinan Pashës, Prizren</h1> 
                     </div>
@@ -151,7 +151,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\Muzeu Etnologjik.jpg" alt="Muzeu Etnologjik" >
+                    <img src="..\PWWW21-22_Gr5\assets\cards\Muzeu Etnologjik.jpg" alt="Muzeu Etnologjik" >
                     <div class="flip-card-front-text">
                         <h1>Muzeu Etnologjik (Etnografik), Prishtinë</h1> 
                     </div>
@@ -183,7 +183,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\Lidhja Prizrenit.jpg" alt="Lidhja Prizrenit" >
+                    <img src= "..\PWWW21-22_Gr5\assets\cards\Lidhja Prizrenit.jpg" alt="Lidhja Prizrenit" >
                     <div class="flip-card-front-text">
                         <h1>Lidhja e Prizrenit, Prizren</h1> 
                     </div>
@@ -210,7 +210,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\Muzeu Kosoves.jpg" alt="Muzeu Kosoves">
+                    <img src="..\PWWW21-22_Gr5\assets\cards\Muzeu Kosoves.jpg" alt="Muzeu Kosoves">
                     <div class="flip-card-front-text">
                         <h1>Muzeu i Kosovës, Prishtinë</h1> 
                     </div>
@@ -242,7 +242,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\Kalaja Prizrenit.jpg" alt="Kalaja Prizrenit">
+                    <img src="..\PWWW21-22_Gr5\assets\cards\Kalaja Prizrenit.jpg" alt="Kalaja Prizrenit">
                     <div class="flip-card-front-text">
                         <h1>Kalaja Prizrenit, Prizren</h1> 
                     </div>
@@ -270,7 +270,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\Manastiri Decanit.jpg" alt="Manastiri Decanit">
+                    <img src="..\PWWW21-22_Gr5\assets\cards\Manastiri Decanit.jpg" alt="Manastiri Decanit">
                     <div class="flip-card-front-text">
                         <h1>Manastiri Visoki Deçani, Deçan</h1> 
                     </div>
@@ -301,7 +301,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\Ura Gurit.jpg" alt="Ura Gurit">
+                    <img src="..\PWWW21-22_Gr5\assets\cards\Ura Gurit.jpg" alt="Ura Gurit">
                     <div class="flip-card-front-text">
                         <h1>Ura Gurit, Mitrovicë</h1> 
                     </div>
@@ -327,7 +327,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="\assets\cards\NewBorn.jpg" alt="NewBorn">
+                    <img src="..\PWWW21-22_Gr5\assets\cards\NewBorn.jpg" alt="NewBorn">
                     <div class="flip-card-front-text">
                         <h1>Monumenti NewBorn, Prishtinë</h1> 
                     </div>
@@ -367,7 +367,7 @@
             Sorry, your browser does not support inline SVG.
           </svg>
           <video controls >
-            <source src="assets\videos\Kalaja e Prizrenit.mp4">
+            <source src="..\PWWW21-22_Gr5\assets\videos\Kalaja e Prizrenit.mp4">
           </video>
         </section>
         
@@ -432,6 +432,12 @@
             <p>Template by OS Templates</p>
         </div>
       </footer>
+      <script >
+        var mode = document.getElementById("nightmode");
+        mode.onclick = function() {
+              document.body.classList.toggle("dark_theme");
+        }
+        </script>
 </body>
 <script src="scripts/cultural.js"> </script>
 </html>

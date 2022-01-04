@@ -31,7 +31,7 @@ body {
   
   
   header {
-    max-width: 98%;
+    /* max-width: 98%; */
     background-color: var(--background_color);
     color: var(--text_color);
     border-top: 5px solid var(--template_color);
