@@ -1,0 +1,493 @@
+:root {
+  --text_color: black;
+  --title_color: #333333;
+  --template_color: #81b300;
+  --color: #999999;
+  --background_color: white;
+  --first_gradient: #91b247;
+  --second_gradient: #c3d053;
+ 
+}
+
+.dark_theme {
+  --text_color: rgb(218, 241, 203);
+  --background_color: rgb(143, 162, 143);
+  --title_color: #514c4c;
+  --template_color: rgb(44, 61, 44);
+  --color: #22312b;
+  --first_gradient: rgb(52, 71, 47);
+  --second_gradient: #92987e;
+}
+
+
+/* Stilizimi i pjeses header  */
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background_color);
+  color: var(--text_color);
+  font-family: Georgia, serif;
+  font-style: normal;
+  display: block;
+}
+
+
+header {
+  max-width: 98%;
+  background-color: var(--background_color);
+  color: var(--text_color);
+  border-top: 5px solid var(--template_color);
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+/* Icons */
+.icons {
+  width: 250px;
+  height: 50px;
+  background-color: var(--template_color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  padding-right: 0.7em;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+}
+.icon--linkedin {
+  background-image: url(../assets/icons/icon-linkedin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--twitter {
+  background-image: url(../assets/icons/icon-twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--pinterest {
+  background-image: url(../assets/icons/icon-pinterest.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--google-plus {
+  background-image: url(../assets/icons/icon-google-plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--rss {
+  background-image: url(../assets/icons/icon-rss.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  padding-top: 0.5em;
+  padding-left: 0.6em;
+  margin: 0;
+}
+
+.title--text {
+  color: var(--title_color);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-left: 1em;
+}
+.title--text::first-letter {
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.menuItem--item:first-child {
+  color: var(--color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.menuItem--item:last-child {
+  color: var(--color);
+  margin-right: 0.7em;
+  margin-top: -1em;
+  font-size: 12px;
+  float: right;
+}
+
+.menuItem--item a {
+  color: var(--template_color);
+  margin-right: 4px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.menuItem--item{
+  color: var(--color);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menuItem--item a:not(:last-child) {
+  padding-right: 6px;
+  border-right: 1px solid var(--template_color);
+}
+/* Styling the navigation bar */
+.nav-bar{
+  padding-right: 0.6em;
+  display: flex;
+  justify-content: flex-left;
+  background-color:  var(--template_color);
+  align-items: center;
+}
+
+.nav_links{
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  
+}
+.nav_links li{
+  display: inline-block;
+  color: var(--color);
+  
+}
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: var(--background_color);
+  padding: 10px;
+}
+.nav_links li a:hover{
+  color: #1f1f1f;
+}
+button{
+  width: 80px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  color: var(--template_color);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: none;
+  border-left: 2px solid #ddd; 
+}
+button:hover{
+  background-color: rgba(53, 28, 28, 0.3);
+}
+.div-search{
+  margin-left: auto; 
+  display: inline-block;
+  border: none;
+  background-color:#fff;
+  align-self:right;
+}
+.search{
+  height: 20px;
+  width: 200px;
+  border: none;
+  background-color: #fff;
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: 400;
+  align-items: right;
+  border-right: 1px solid #fff;
+  padding-left: 10px;
+}
+.search::placeholder {
+  color: #7f7f7f;
+  text-transform: capitalize;
+}
+
+.b-search-form__input_button {
+  width: 80px;
+  padding: 3px 5px;
+  color: #81b300;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*----*/
+
+/*Stilizimi i pjeses main Contact_us */
+
+
+main {
+  max-width: 98%;
+  margin-left: 1%;
+  background-color: var(--background_color);
+  color: var(--text_color);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.move {
+  border: 1px dotted var(--first_gradient);
+  background-color: var(--second_gradient);
+}
+
+.container {
+  background: var(--background_color);
+  color: var(--text_color);
+  width: 800px;
+  max-width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-position: center;
+}
+
+.gradient {
+  padding: 50px;
+  background: linear-gradient(115deg, var(--first_gradient) 10%, var(--second_gradient) 50%);
+}
+
+.container .text {
+  font-size: 35px;
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+  background: -webkit-linear-gradient(right, var(--first_gradient), var(--second_gradient));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container form {
+  padding: 20px 0 0 0;
+}
+
+.container form .row {
+  display: flex;
+  margin: 32px 0;
+}
+
+form .row .inputs {
+  width: 100%;
+  height: 40px;
+  margin: 0px 15px;
+  position: relative;
+}
+
+form .row .textarea {
+  height: 70px;
+}
+
+.inputs input,
+.textarea textarea {
+  background-color: var(--background_color);
+  color: var(--text_color);
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+} 
+
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+.inputs input:focus ~ label,
+.textarea textarea:focus ~ label,
+.inputs input:valid ~ label{
+  transform: translateY(-25px);
+  color: var(--second_gradient);
+  font-size: 14px;
+}
+
+textarea:focus, input:focus{
+  
+  outline: none;
+}
+
+.inputs label {
+  position: absolute;
+  bottom: 10px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: var(--background_color);
+  color: var(--text_color);
+}
+
+.inputs .underline {
+  position: absolute;
+  color:var(--text_color);
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.inputs .underline:before, 
+.inputs .underline:after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--second_gradient);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+} 
+
+.inputs input:focus ~ .underline:before, .underline:after,
+.textarea textarea:focus ~ .underline:before, .underline:after,
+.inputs input:valid ~ .underline:before, .underline:after {
+  transform: scaleX(1);
+
+}
+
+.submitButton1  {
+  height: 35px!important; 
+  width: 25%!important;
+  overflow: hidden; 
+}
+
+ .submitButton1 .inputs .inner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(right,  var(--first_gradient), var(--second_gradient), var(--first_gradient), var(--second_gradient));
+  background: -webkit-linear-gradient(right,  var(--first_gradient), var(--second_gradient), var(--first_gradient), var(--second_gradient));
+}
+
+
+.submitButton1 .inputs input {
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  text-shadow:none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+}
+
+/* ----- */
+
+/* Stilizimi i pjeses footer */
+
+footer{
+  color: rgb(197, 197, 197);
+  background-color: rgb(100, 98, 98);
+  text-align: justify;
+  align-items: center;
+  background-size: contain;
+  position: absolute;
+  font-size: 17px;
+}
+
+.footer1{
+  margin-left: 60px;
+  margin-top: 40px; 
+}
+
+.footer1 th{
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: left;
+  color: rgb(158, 156, 156);
+  padding-left: 16px;
+}
+
+.footer2{
+  text-align: left;
+  vertical-align: top;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+a:link {
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(197, 197, 197); 
+}
+
+a:hover{
+  text-shadow: -1px 1px 13px white;
+  transition: 150ms linear;
+}
+
+.readMore a{
+  color: rgb(33, 211, 33);
+}
+
+.grabournewsletter {
+  background-color: #313030;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding-left: 5px;
+  color: white;
+  max-lines: 1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.grabournewsletter::placeholder{
+  color:white;
+  font-size: 16px;
+}
+
+.submitButton {
+  color:rgb(33, 211, 33);
+  background-color: #313030;
+  border-radius: 5px;
+  padding: 3px 9px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  zoom: 105%;
+  box-shadow: 1px 1px 13px rgb(27, 27, 27);
+  transition: 100ms linear;
+}
+
+.divFooter{
+  color: rgb(145, 144, 144);
+  background-color: #333333;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  display:flex;
+  justify-content: space-between;
+}
