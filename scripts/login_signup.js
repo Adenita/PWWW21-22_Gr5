@@ -77,13 +77,14 @@ function signUp() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let fullName = document.getElementById("name").value;
-
+  let date = new Date();
   returnDefault();
 
   let users = {
     fullName: fullName,
     email: email,
-    password: password
+    password: password,
+    createAt: date
   };
 
   let getUsers = JSON.parse(localStorage.getItem("users"));
@@ -94,7 +95,7 @@ function signUp() {
     alert("This e-mail is used earlier");
     return;
   }
-  let em = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  let em = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/; 
   let p = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
   console.log(em.test("arlinda.sylaj@studentet.uni-pr.edu")); 
