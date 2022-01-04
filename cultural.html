@@ -10,7 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Vujahday+Script&display=swap" rel="stylesheet">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#hide").click(function(){
+          $("#img1").hide("slow");
+        });
+        $("#show").click(function(){
+          $("#img1").show("slow");
+        });
+      });
+    </script>
     <title>PWWW21-22_Gr5</title>
 </head>
 <body>
@@ -111,8 +121,10 @@
               </ol>
             </ul>
           </div>
-          <div class="">
-            
+          <div id="div1">
+            <img id="img1" src="../PWWW21-22_Gr5/assets/cards/Kalaja Prizrenit.jpg" alt=""> 
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
           </div>
         </section>
 
