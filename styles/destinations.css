@@ -1,0 +1,60 @@
+
+.natyra {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .textNatyra{
+    padding-left: 20px;
+    color:rgb(37, 37, 37);
+    padding-right: 20px;
+  }
+  
+  .divFotoMirusha{
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  
+  #fotoMirusha{
+    border-radius: 20px;
+  }
+  
+  .divFotoUjmani{
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  
+  #fotoUjmani{
+    border-radius: 20px;
+  }
+  
+  .divFotoBrezovica{
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  
+  #fotoBrezovica{
+    border-radius: 20px;
+  }
+  
+  .divFotoDrini{
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  
+  #fotoDrini{
+    border-radius: 20px;
+  }
+  
+  .divFotoRugova{
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+  }
+  
+  #fotoRugova{
+    border-radius: 20px;
+  }
