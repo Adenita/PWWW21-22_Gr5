@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function isNotEmpty(value) {
     if (value == null || typeof value == 'undefined' ) return false;
-    return (value.length > 0);
+        return (value.length > 0);
 }
 
 function isNumber(num) {
-    return (num.length > 0) && !isNaN(num);
+    return !isNaN(num);
 }
 
 function isEmail(email) {
@@ -25,15 +25,10 @@ function isEmail(email) {
 function fieldValidation(field, validationFunction) {
     if (field == null) return false;
    
-    let isFieldValid = validationFunction(field.value)
-    if (!isFieldValid) {
-    field.className = 'placeholderRed';
-    } else {
-    field.className = '';
-    }
-   
+    let isFieldValid = validationFunction(field.value);
     return isFieldValid;
 }
+
 
 function isValid() {
     var valid = true;
@@ -61,6 +56,6 @@ function sendContact() {
         let user = new User(fname.value, lname.value, email.value, phone.value, textarea.value);
         alert("${user.firstName}, your message has been sent")
     } else {
-        alert("There was an error")
+        alert("There was a mistake, please re-check your input")
     }
 }
