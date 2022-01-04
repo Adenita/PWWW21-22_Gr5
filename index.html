@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header_footer.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/canvas.js"></script>
+
     <title>PWWW21-22_Gr5</title>
 </head>
 <body>
@@ -46,8 +50,7 @@
           <li class="menuItem menuItem--item">
             <a id="signup" href="#">Sign Up</a>
             <a id="login" href="#">Login</a>
-            <a href="#">RSS Feeds</a>
-            <a href="#">Archived News</a>
+            <a href="#" id = "nightmode">Night Mode</a>
           </li>
         </ul>
       </div>
@@ -75,18 +78,22 @@
       <!-- Navigation Bar-->
     </header>
     <main>
+      
       <section id = "slider">
         <div class = "slideContainer">
           <div class = "myslide fade">
-            <img src="images/FantasySunset.jpg" class = "imageSlider"/>
+            <img src="images/FantasySunset.jpg" alt = "Sunset" class = "imageSlider"/>
           </div>
-        </div>
+          <div class = "myslide fade" hidden>
+            <img src="images/EnchantedAutumn.jpg" alt = "Autumn" class = "imageSlider"/>
+          </div>
+        </div> 
         <br>
         <div style="text-align:center">
-          <span class="prev" onclick="plusSlides(-1)"><img src="images/left-arrow.png" style = "width: 10px; height: 10px;" alt="" /></span>
+          <a class="prev" onclick="plusSlides(-1)"><img src="images/left-arrow.png" style = "width: 10px; height: 10px;" alt="" /></a>
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="next" onclick="plusSlides(1)"> <img src="images/right-arrow.png" style = "width: 10px; height: 10px;" alt="" /></span>
+          <a class="next" onclick="plusSlides(1)"> <img src="images/right-arrow.png" style = "width: 10px; height: 10px;" alt="" /></a>
         </div>
       </section>
 
@@ -187,9 +194,11 @@
         <tr height="200">
           <td class="footer2"><p>Convallisijusto vestas mus pellentum aenean sapibulum in aliquam volut pat integest nulla</p><br>
 
-            <p>Tel: 049 111 222<br>
-            Fax:<br>
-            Email: contact@mydomain.com</p>
+            <address>
+              <p>Tel: 049 111 222<br>
+              Fax:<br>
+              Email: contact@mydomain.com</p>
+            </address>
           </td>
 
           <td class="footer2">
@@ -236,5 +245,12 @@
       </div>
   
     </footer>
+
+    <script >
+      var mode = document.getElementById("nightmode");
+      mode.onclick = function() {
+            document.body.classList.toggle("dark_theme");
+      }
+      </script>
 </body>
 </html>
