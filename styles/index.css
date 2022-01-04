@@ -454,6 +454,10 @@ footer{
   padding-left: 16px;
 }
 
+.footer1:hover{
+  border-bottom: 2px solid gray;
+}
+
 .footer2{
   text-align: left;
   vertical-align: top;
