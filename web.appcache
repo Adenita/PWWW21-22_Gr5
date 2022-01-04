@@ -38,6 +38,8 @@ script/login_signup.js
 
 
 FALLBACK:
-
+game.html
+styles/game.css
+script/game.js
 
 
